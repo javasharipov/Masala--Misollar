@@ -353,10 +353,7 @@ switch (operation) {
         break;
 }
 
-// Output the result if it was successfully calculated
-if (result !== undefined) {
-    console.log(`Result: ${result}`);
-}
+
 
 
 }
