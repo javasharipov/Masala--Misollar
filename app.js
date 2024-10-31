@@ -505,7 +505,26 @@ switch (M) {
 
 {
 	// masala 10
-  
+  let direction = 's'; 
+let command = 2;     
+
+switch (direction) {
+    case 's': // North
+        direction = (command === 1) ? 'g' : (command === 2) ? 'q' : 's';
+        break;
+    case 'j': // South
+        direction = (command === 1) ? 'q' : (command === 2) ? 'g' : 'j';
+        break;
+    case 'q': // East
+        direction = (command === 1) ? 's' : (command === 2) ? 'j' : 'q';
+        break;
+    case 'g': // West
+        direction = (command === 1) ? 'j' : (command === 2) ? 's' : 'g';
+        break;
+}
+
+console.log("New direction:", direction);
+
 
 }
 
